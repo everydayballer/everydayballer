@@ -1,0 +1,71 @@
+/* Values Section Styles */
+#values {
+    background-color: var(--white);
+    position: relative;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+  
+  .value-card {
+    background-color: var(--light-grey);
+    padding: var(--space-lg);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .value-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--primary-green);
+  }
+  
+  .value-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .value-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--secondary-black);
+  }
+  
+  .values-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--space-xl);
+  }
+  
+  .values-intro p {
+    font-size: 1.2rem;
+    color: var(--secondary-black);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .values-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .values-intro p {
+      font-size: 1.1rem;
+    }
+  }

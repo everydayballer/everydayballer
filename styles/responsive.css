@@ -1,0 +1,158 @@
+/* Responsive Styles */
+
+/* Tablet Styles (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  /* About Section */
+  .about-content {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+  
+  .about-image, .about-text {
+    width: 100%;
+  }
+  
+  /* Services Section */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Community Section */
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Contact Section */
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+  /* Header */
+  nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  /* Section Headers */
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* Services Section */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* How It Works Section */
+  .steps-container {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  
+  /* Community Section */
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+  
+  .footer-logo, .footer-links, .footer-social {
+    width: 100%;
+  }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+  
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .hero-content .btn-primary {
+    font-size: 0.9rem;
+    padding: var(--space-xs) var(--space-md);
+  }
+  
+  /* Section Headers */
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* About Section */
+  .about-text h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Contact Form */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: var(--space-xs);
+  }
+}
+
+/* Mobile Menu Functionality (JavaScript would typically handle this) */
+@media screen and (max-width: 767px) {
+  /* This is purely presentational - actual functionality would require JavaScript */
+  nav.mobile-active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: var(--space-md) 0;
+  }
+  
+  nav.mobile-active ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  nav.mobile-active ul li {
+    width: 100%;
+  }
+  
+  nav.mobile-active ul li a {
+    display: block;
+    padding: var(--space-sm) var(--space-lg);
+    border-bottom: 1px solid var(--medium-grey);
+  }
+}
