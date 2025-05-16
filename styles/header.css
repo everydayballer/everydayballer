@@ -18,11 +18,19 @@ header .container {
   padding: var(--space-sm) 0;
 }
 
-.logo h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-green);
-  margin: 0;
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 75px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 nav ul {
@@ -72,4 +80,11 @@ nav ul li a:hover::after {
   background-color: var(--primary-black);
   border-radius: 3px;
   transition: all 0.3s ease;
+}
+
+/* Footer Logo Styles */
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  margin-bottom: var(--space-sm);
 }

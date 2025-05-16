@@ -13,7 +13,7 @@
   --accent: #FF6B00;
   
   /* Spacing system (8px) */
-  --space-xs: 0.5rem;  /* 8px */
+  --space-xs: 0.5rem; /* 8px */
   --space-sm: 1rem;    /* 16px */
   --space-md: 1.5rem;  /* 24px */
   --space-lg: 2rem;    /* 32px */
@@ -65,8 +65,112 @@ img {
   height: auto;
 }
 
+/* Enhanced List Styling */
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation List */
+nav ul {
+  display: flex;
+  gap: var(--space-md);
+}
+
+nav ul li a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--secondary-black);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: var(--primary-green-light);
+  color: var(--primary-green-dark);
+}
+
+/* Contact Info List */
+.contact-info ul {
+  margin: var(--space-md) 0;
+}
+
+.contact-info ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: var(--space-sm);
+  padding: var(--space-sm);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.contact-info ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.contact-info ul li strong {
+  margin-right: var(--space-sm);
+  color: var(--white);
+}
+
+/* Footer Links List */
+.footer-links ul li {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: var(--space-xs);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.footer-links ul li a {
+  padding: var(--space-sm);
+  display: block;
+  color: var(--medium-grey);
+  transition: all 0.3s ease;
+}
+
+.footer-links ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links ul li:hover a {
+  color: var(--white);
+  padding-left: calc(var(--space-sm) + 5px);
+}
+
+/* Training Schedule List */
+.contact-info ul li:nth-child(1) {
+  border-left: 4px solid #FF6B00;
+}
+
+.contact-info ul li:nth-child(2) {
+  border-left: 4px solid #4CAF50;
+}
+
+.contact-info ul li:nth-child(3) {
+  border-left: 4px solid #2196F3;
+}
+
+/* Social Icons List */
+.social-icons {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.social-icon {
+  background: rgba(255, 255, 255, 0.1);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: var(--primary-green);
+  transform: translateY(-3px);
 }
 
 a {
